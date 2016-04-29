@@ -108,9 +108,9 @@ react-native start with windows 7 system
 
 如果真实设备白屏但没有弹出任何报错，可以在安全中心里看看是不是应用的“悬浮窗”的权限被禁止了。
 
-安卓调试
+##安卓调试
 
-打开Chrome，访问 http://localhost:8081/debugger-ui，应当能看到一个页面。按F12打开开发者菜单。
+打开Chrome，访问 [http://localhost:8081/debugger-ui](http://localhost:8081/debugger-ui)，应当能看到一个页面。按F12打开开发者菜单。
 
 在模拟器或真机菜单中选择Debug JS，即可开始调试。
 
