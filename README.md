@@ -96,7 +96,7 @@ react-native start with windows 7 system
 
 ##安卓运行
 
-保持packager开启，另外打开一个命令行窗口，然后在工程目录（`cd /d D:\Java\AndroidStudio\React-Native HiReactNative`）下运行
+保持packager开启，另外打开一个命令行窗口，然后在工程目录（`cd /d D:\Java\AndroidStudio\React-Native\HiReactNative`）下运行
 `react-native run-android`
 首次运行需要等待数分钟并从网上下载gradle依赖。（这个过程屏幕上可能出现很多小数点，表示下载进度。这个时间可能耗时很久，也可能会不停报错链接超时、连接中断等等——取决于你的网络状况和墙的不特定阻断。总之要顺利下载，请使用稳定有效的科学上网工具。）
 
