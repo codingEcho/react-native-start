@@ -1,16 +1,24 @@
 # react-native-start
 react-native start with windows 7 system
 **本文参考自React Native 中文社区**
+
 +[在Windows下搭建React Native Android开发环境](http://bbs.reactnative.cn/topic/10/%E5%9C%A8windows%E4%B8%8B%E6%90%AD%E5%BB%BAreact-native-android%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83)
+
 +[React Native的常见问题](http://bbs.reactnative.cn/topic/130/%E6%96%B0%E6%89%8B%E6%8F%90%E9%97%AE%E5%89%8D%E5%85%88%E6%9D%A5%E8%BF%99%E9%87%8C%E7%9C%8B%E7%9C%8B-react-native%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98)
+
 +[在mac上搭建的视频教程](http://v.youku.com/v_show/id_XMTQ4OTYyMjg4MA==.html?from=s1.8-1-1.2#paction)
 
 ## 安装Java JDK
+
 +在[Java官网](http://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html)下载相应版本的JDK安装。
+
 +**注意：虽然安装的是Java8，但是还是最好设置JAVA_HOME,Path,clsspath环境变量**
 如系统变量设置如下：
+
 -`JAVA_HOME` `D:\Java\jdk\jdk1.8`
+
 -`classpath` `D:\Java\jdk\jdk1.8\lib\tools.jar`（说明：*笔者因没有设置classpath，导致踩坑*）
+
 -`Path` （新版本的JDK不用手动设置）
 
 ## 安装Android SDK
@@ -18,10 +26,15 @@ react-native start with windows 7 system
 然后进入SDKManager(可通过Android Studio菜单Tools-Android-SDK Manager)，确保以下项目已经安装并更新到最新：
 
 -SDK Platforms/Android 6.0(Marshmallow) (`API Level 23`)
+
 -SDK Tools/Android SDK Tools (`25.1.3`(最新版了，不知如何切换到低版本))
+
 -SDK Tools/Android SDK Platform-tools (`23.1.0`)
--SDK Tools/Android SDK Build-tools (`23.0.1`)（这个必须版本严格匹配23.0.1,笔者安装时已经比这个要高了，可以通过底部“运行独立SDK管理工具”来写在并安装此版本）
+
+-SDK Tools/Android SDK Build-tools(`23.0.1`)（这个必须版本严格匹配23.0.1,笔者安装时已经比这个要高了，可以通过底部“运行独立SDK管理工具”来写在并安装此版本）
+
 -SDK Tools/Android Support Library(`23.2.1`)
+
 -SDK Tools/Android Support Repository(`30.0.0`)
 
 推荐使用腾讯Bugly的镜像加速下载。[查看腾讯的说明](http://android-mirror.bugly.qq.com:8080/include/usage.html)
