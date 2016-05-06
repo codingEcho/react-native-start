@@ -68,6 +68,7 @@ react-native start with windows 7 system
 建议设置npm镜像以加速后面的过程。
 
 `npm config set registry https://registry.npm.taobao.org --global`
+
 `npm config set disturl https://npm.taobao.org/dist --global`
 
 ##安装react-native命令行工具
