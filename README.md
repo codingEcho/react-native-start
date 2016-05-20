@@ -52,6 +52,7 @@ react-native start with windows 7 system
 ##安装C++环境
 **编译node.js的C++模块时需要用到**
 推荐从[Itellyou](http://www.itellyou.cn/)下载并安装Visual Studio for desktop(这里不建议安装Visual Studio 2013或者2015，如果只是需要C++模块，那Desktop版本应该满足了)。也可选择Windows SDK、cygwin或mingw等其他C++环境（笔者自己安装的是Visual Studio 2013，因为在此之前一直喜欢用VS2013来写JavaScript和HTML）。
+**注意**如果使用VS2015，你需要在命令行中设置`npm config set msvs_version 2015 --global`
 
 ##安装Git
 [Git下载地址](https://git-for-windows.github.io/)
