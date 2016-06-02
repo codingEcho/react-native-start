@@ -365,7 +365,7 @@ class PauseMenu extends React.Component{
 }
 ```
 
-## Mixin
+## Mixins
 
 在ES5下，我们经常使用`mixin`来为我们的类添加一些新的方法，譬如`PureRenderMixin`
 ```javascript
