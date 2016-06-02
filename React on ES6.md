@@ -367,7 +367,7 @@ class PauseMenu extends React.Component{
 
 ## Mixins
 
-在ES5下，我们经常使用`mixin`来为我们的类添加一些新的方法，譬如`PureRenderMixin`
+在ES5下，我们经常使用`mixins`来为我们的类添加一些新的方法，譬如`PureRenderMixin`
 ```javascript
 var PureRenderMixin = require('react-addons-pure-render-mixin');
 React.createClass({
@@ -379,9 +379,9 @@ React.createClass({
 });
 ```
 
-然而现在官方已经不再打算在`ES6`里继续推行`Mixin`，他们说：`Mixins Are Dead. Long Live Composition。`
+然而现在官方已经不再打算在`ES6`里继续推行`Mixins`，他们说：`Mixins Are Dead. Long Live Composition。`
 
-尽管如果要继续使用mixin，还是有一些第三方的方案可以用，譬如这个方案
+尽管如果要继续使用mixins，还是有一些第三方的方案可以用，譬如这个方案
 
 不过官方推荐，对于库编写者而言，应当尽快放弃Mixin的编写方式，上文中提到`Sebastian Markbåge`的一段代码推荐了一种新的编码方式：
 ```javascript
