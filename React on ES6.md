@@ -30,7 +30,7 @@ var {
 
 ```javascript
 // ES6
-import React, { 
+import React, {
     Component,
     PropTypes,
 } from 'react';
@@ -114,7 +114,7 @@ class Photo extends React.Component {
 从上面的例子里可以看到，给组件定义方法不再用 `名字: function()`的写法，而是直接用`名字()`，在方法的最后也不能有逗号了。
 
 ```javascript
-// ES5 
+// ES5
 var Photo = React.createClass({
     componentWillMount: function(){
 
@@ -148,7 +148,7 @@ class Photo extends React.Component {
 
 在ES5里，属性类型和默认属性分别通过propTypes成员和getDefaultProps方法来实现
 ```javascript
-// ES5 
+// ES5
 var Video = React.createClass({
     getDefaultProps: function() {
         return {
@@ -211,7 +211,7 @@ Video.propTypes = {
     maxLoops: React.PropTypes.number.isRequired,
     posterFrameSrc: React.PropTypes.string.isRequired,
     videoSrc: React.PropTypes.string.isRequired,
-}; 
+};
 ```
 **注意:** 对`React`开发者而言，`static`成员在`IE10`及之前版本不能被继承，而在`IE11`和其它浏览器上可以，这有时候会带来一些问题。`React Native`开发者可以不用担心这个问题。
 
@@ -219,7 +219,7 @@ Video.propTypes = {
 
 
 ```javascript
-// ES5 
+// ES5
 var Video = React.createClass({
     getInitialState: function() {
         return {
@@ -266,7 +266,7 @@ var PostInfo = React.createClass({
     },
     render: function(){
         return (
-            <TouchableHighlight 
+            <TouchableHighlight
             onPress={this.handleOptionsButtonClick}>
                 <Text>{this.props.label}</Text>
             </TouchableHighlight>
@@ -274,7 +274,7 @@ var PostInfo = React.createClass({
     },
 });
 ```  
-  
+
 在`ES6`下，你需要通过`bind`来绑定`this`引用，
 或者使用箭头函数（它会绑定当前`scope`的`this`引用）来调用
 ```javascript
@@ -286,7 +286,7 @@ class PostInfo extends React.Component
     }
     render(){
         return (
-            <TouchableHighlight 
+            <TouchableHighlight
                 onPress={this.handleOptionsButtonClick.bind(this)}
                 onPress={e=>this.handleOptionsButtonClick(e)}
                 >
@@ -295,9 +295,10 @@ class PostInfo extends React.Component
         )
     },
 }
-``` 
+```
 
 **箭头函数**实际上是在这里定义了一个临时的函数，箭头函数的箭头=>之前是一个空括号、单个的参数名、或用括号括起的多个参数名，而箭头之后可以是一个表达式（作为函数的返回值），或者是用花括号括起的函数体（需要自行通过return来返回值，否则返回的是undefined）。
+
 ```javascript
 // 箭头函数的例子
 ()=>1
@@ -365,7 +366,7 @@ class PauseMenu extends React.Component{
 }
 ```
 
-## Mixin
+## Mixins
 
 在ES5下，我们经常使用`mixin`来为我们的类添加一些新的方法，譬如`PureRenderMixin`
 ```javascript
