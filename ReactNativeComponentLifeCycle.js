@@ -6,7 +6,7 @@ import ReactNative, {
     TouchableHighlight
 } from 'react-native';
 
-class LifeCycleES6 extends React.Component {
+class LifeCycleES6 extends Component {
     // 1.创建阶段
 
     // 在创建类的时候被调用
@@ -42,6 +42,7 @@ class LifeCycleES6 extends React.Component {
         // 业务逻辑的处理都应该放在这里,如对state 的操作
         console.log("componentWillMount");
         console.log(this.state);
+        // >>>能够调用setState()<<<
     }
 
     handleOptionsButtonClick(e) {
@@ -68,6 +69,11 @@ class LifeCycleES6 extends React.Component {
     componentDidMount() {
         // 该方法发生在render 之后。在该方法中,ReactJS会使用render方法返回的虚拟DOM对象来创建真实的DOM结构
         console.log("componentDidMount");
+        // >>>能够调用setState()<<<
+    }
+
+    componentWillReceiveProps(){
+        // >>>能够调用setState()<<<
     }
 
     // 3.更新阶段
