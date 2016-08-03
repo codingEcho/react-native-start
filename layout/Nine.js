@@ -1,3 +1,6 @@
+/*
+模仿携程九宫格的示例
+*/
 import React, {Component} from 'react'
 import ReactNative, {AppRegistry, StyleSheet, View, Text, PixelRatio} from 'react-native'
 
