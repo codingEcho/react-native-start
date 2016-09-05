@@ -10,6 +10,8 @@ react-native start with windows 7 system
 
 - [在mac上搭建的视频教程](http://v.youku.com/v_show/id_XMTQ4OTYyMjg4MA==.html?from=s1.8-1-1.2#paction)
 
+- [mac IOS 环境搭建戳这里](http://reactnative.cn/docs/0.31/getting-started.html#content)
+
 ## 安装Java JDK
 
 1. 在[Java官网](http://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html)下载相应版本的JDK安装。
