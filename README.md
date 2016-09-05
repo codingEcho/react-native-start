@@ -2,7 +2,7 @@
 
 ## 1.入门
 
-### 1.1[在Windows下搭建React Native Android开发环境](https://github.com/codingEcho/react-native-start/blob/master/Start%20React%20Native%20For%20Android%20On%20Windows%207.md)
+### 1.1[在Windows下搭建React Native Android开发环境](https://github.com/codingEcho/react-native-start/blob/master/Start%20React%20Native%20For%20Android%20On%20Windows%207.md)或[在Mac下搭建IOS开发环境](https://github.com/codingEcho/react-native-start/blob/master/Mac%20IOS%20%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.md)
 
 ### 1.2[ES5和ES6语法对照表](https://github.com/codingEcho/react-native-start/blob/master/React%20on%20ES6.md)
 
