@@ -36,9 +36,10 @@ code-push login 登陆
 code-push loout 注销
 code-push access-key ls 列出登陆的token
 code-push access-key rm <accessKye> 删除某个 access-key
+
 三、在CodePush服务器上注册app
 
-为了让codePush服务器知道你的app，我们需要向它注册app： code-push app add <appName> ，就可以了。
+为了让codePush服务器知道你的app，我们需要向它注册app： `code-push app add <appName>` ，就可以了。
 
 code-push app相关命令
 
@@ -47,6 +48,7 @@ remove 或者 rm 在账号里移除一个app
 rename 重命名一个存在app
 list 或则 ls 列出账号下面的所有app
 transfer 把app的所有权转移到另外一个账号
+
 四、在app中添加SDK，配置相关代码
 
 由于我目前只开发了android，以下就以android为例。
@@ -59,9 +61,9 @@ CodePush提供了两种方式： RNPM 和 Manual 。
 
 如果你不想依赖其他工具或者愿意走多几步额外的步骤，可以使用 Manual。不过像我这么懒的代码从业者，毫不犹豫地选择了 RNPM 这个实用工具。
 
-第三步运行 npm i rnpm 安装 RNPM。
+第三步运行 `npm i rnpm` 安装 RNPM。
 
-第四步运行 rnpm link react-native-code-push 。这条命令将会自动帮我们在anroid文件中添加好设置（其实就是通过Manual的安装步骤）
+第四步运行 `rnpm link react-native-code-push` 。这条命令将会自动帮我们在anroid文件中添加好设置（其实就是通过Manual的安装步骤）
 
 第五步在 android/app/build.gradle 文件里面添加额为的创建任务：
 
